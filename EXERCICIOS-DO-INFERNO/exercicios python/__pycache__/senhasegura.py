@@ -10,7 +10,7 @@ def gerar_senha():
         random.choice(maiusculas),
         random.choice(minusculas),
         random.choice(numeros),     
-        random.choice(especiais)    
+        random.choice(especiais)   
     ]
  
     todos_caracteres = maiusculas + minusculas + numeros + especiais
