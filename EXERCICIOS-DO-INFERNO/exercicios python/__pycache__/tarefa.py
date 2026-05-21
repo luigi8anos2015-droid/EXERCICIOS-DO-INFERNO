@@ -3,43 +3,50 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 def gerenciador_tarefas():
     tarefas = []
+
     while True:
-        print("1. Adicionar tarefa")
+        print("\n1. Adicionar tarefa")
         print("2. Listar tarefas")
-        print("3. Sair")
+        print("3. Remover tarefa")
+        print("4. Sair")
         escolha = input("Escolha uma opção: ")
-        
+
         if escolha == '1':
-            tarefa= input("Digite a tarefa: ")
-            tarefas.append(tarefa)
-            if tarefa.append(tarefas):
+            tarefa = input("Digite a tarefa: ").strip()
+            if tarefa:
+                tarefas.append(tarefa)
                 print("Tarefa adicionada com sucesso!")
             else:
-                print("Erro, a tarefa nao pode estar vazia")
+                print("Erro: a tarefa não pode estar vazia.")
+
         elif escolha == '2':
             if tarefas:
-                print("\ntarefas:")
-                for i in enumerate(tarefas,1):
-                    print(f"{i[0]}. {i[1]}")
-                else:
-                    print("Nenhuma tarefa cadastrada.")
+                print("\nTarefas:")
+                for numero, tarefa in enumerate(tarefas, 1):
+                    print(f"{numero}. {tarefa}")
+            else:
+                print("Nenhuma tarefa cadastrada.")
+
         elif escolha == '3':
             if not tarefas:
-                print("Error, nenhuma tarefa para remover")
+                print("Erro: nenhuma tarefa para remover.")
                 continue
             try:
-                indice= int(input("Digite o número da tarefa a ser removida: "))
+                indice = int(input("Digite o número da tarefa a remover: "))
                 if 0 < indice <= len(tarefas):
                     tarefa_removida = tarefas.pop(indice - 1)
-                    print(f"Tarefa '{tarefa_removida}' removida com sucesso!")
+                    print(f"Tarefa '{tarefa_removida}' removida!")
                 else:
-                    print("Erro: Número da tarefa inválido.")
+                    print("Erro: número inválido.")
             except ValueError:
-                print("Erro: Por favor, digite um número válido.")
+                print("Erro: digite um número válido.")
+
         elif escolha == '4':
-            print("Saindo do gerenciador de tarefas. Até mais!")
+            print("Saindo... Até mais!")
             break
+
         else:
-            print("Opção inválida. Por favor, escolha uma opção válida.")
+            print("Opção inválida.")
+
 if __name__ == "__main__":
     gerenciador_tarefas()
