@@ -1,4 +1,4 @@
-# 🔥 EXERCICIOS DO INFERNO
+# 🔥 EXERCICIOS -MEUS
 
 > Repositório de exercícios de programação — onde o código dói, mas a evolução é real.
 
