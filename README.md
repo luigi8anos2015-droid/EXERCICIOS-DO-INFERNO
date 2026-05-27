@@ -1,60 +1,71 @@
-# 🔥 EXERCICIOS -MEUS
+# 🐍 EXERCICIOS-MEUS
 
-> Repositório de exercícios de programação — onde o código dói, mas a evolução é real.
-
----
-
-## 👤 Sobre o Repositório
-
-Este repositório é onde eu guardo minha jornada aprendendo programação.  
-Cada pasta é um exercício, cada erro é uma lição, cada solução é uma vitória.
+Repositório de exercícios de prática diária em Python.  
+O objetivo é evoluir consistentemente resolvendo pequenos problemas todos os dias.
 
 ---
 
-## 🗂️ Estrutura
+## 📁 Estrutura
 
 ```
-EXERCICIOS-DO-INFERNO/
-
-
----
-
-## 🧠 O que estou aprendendo
-
-- [ ] Lógica de programação
-- [ ] Python básico
-- [ ] Estruturas de dados
-- [ ] Git e GitHub
-- [ ] Projetos práticos
+EXERCICIOS-MEUS/
+│
+├── exercicios python/
+│   ├── app.py
+│   ├── contador.py
+│   └── main.py
+│
+└── README.md
+```
 
 ---
 
-## 🚀 Como usar este repositório
+## 🎯 Objetivo
 
+Praticar programação em Python de forma contínua, reforçando conceitos como:
+
+- Variáveis e tipos de dados
+- Estruturas de controle (`if`, `for`, `while`)
+- Funções e parâmetros
+- Listas, dicionários e tuplas
+- Tratamento de erros (`try/except`)
+- Lógica e resolução de problemas
+
+---
+
+## 📅 Rotina de prática
+
+| Frequência | Meta |
+|------------|------|
+| Diária     | Pelo menos 1 exercício por dia |
+| Semanal    | Revisar e comentar o código da semana |
+
+---
+
+## 🚀 Como usar
+
+1. Clone o repositório:
 ```bash
-# Clonar o repositório
-git clone https://github.com/luigi8anos2015-droid/EXERCICIOS-DO-INFERNO.git
+git clone https://github.com/seu-usuario/EXERCICIOS-MEUS.git
+```
 
-# Entrar na pasta
-cd EXERCICIOS-DO-INFERNO
+2. Entre na pasta:
+```bash
+cd EXERCICIOS-MEUS
+```
+
+3. Execute um exercício:
+```bash
+python "exercicios python/app.py"
 ```
 
 ---
 
-## 💡 Por que "Do Inferno"?
+## 📝 Tecnologias
 
-Porque aprender a programar **não é fácil** — mas é recompensador.  
-Cada exercício aqui foi suado, debugado, pesquisado e resolvido com esforço real.
-ESSA MERDA E FODA
-
----
-
-## 📌 Status
-
-🟢 Em andamento — atualizando constantemente com novos exercícios DE MERDA PRA VOCE
+- Python 3.x
+- VS Code
 
 ---
 
-## 📬 Contato
-
-Feito por **Luigi** — aprendendo um dia de cada vez. 🚀
+*Feito com consistência, um dia de cada vez.*
