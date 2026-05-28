@@ -7,7 +7,10 @@ def mostrar_menu():
     print("Bem-vindo ao dado RPG!, escolha umas dessas opções para rolar o dado:")
     print("[1] -- Rolar um dado de 20 lados (d20)"
           "\n[2] -- Rolar um dado de 6 lados (d6)"
-          "\n[3] -- Rolar um dado de 8 lados (d8)")
+          "\n[3] -- Rolar um dado de 8 lados (d8)" \
+          "\n[4] -- Rolar um dado de 10 lados (d10)" \
+          "\n[5] -- Rolar um dado de 12 lados (d12)" \
+        "\n[6] -- Rolar um dado de 100 lados (d100)")
 
 
 def voltar_menu():
@@ -20,14 +23,13 @@ def pedir_quantidade():
             qtd = int(input("Quantos dados quer rolar? "))
             if qtd > 0:
                 return qtd
-            
         except ValueError:
             print("Digite um número válido.")
 
 
 def rolar_dados(lados, quantidade):
     resultados = [random.randint(1, lados) for _ in range(quantidade)]
-    print(f"Resultados: {resultados}")
+    print(f"Resultados: {sorted(resultados)}")
     if quantidade > 1:
         print(f"Total: {sum(resultados)}")
     return resultados
@@ -49,6 +51,15 @@ def dado_rpg():
     elif escolha == '3':
         qtd = pedir_quantidade()
         rolar_dados(8, qtd)
+    elif escolha == '4':
+        qtd = pedir_quantidade()
+        rolar_dados(10, qtd)
+    elif escolha == '5':
+        qtd = pedir_quantidade()
+        rolar_dados(12, qtd)
+    elif escolha == '6':
+        qtd = pedir_quantidade()
+        rolar_dados(100, qtd)
     else:
         print("Opção inválida!")
     voltar_menu()
